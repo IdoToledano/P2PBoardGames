@@ -1,0 +1,32 @@
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\obj\Debug\MainWindow.g.cs
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\obj\Debug\App.g.cs
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames_MarkupCompile.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames_MarkupCompile.lref
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\bin\Debug\P2PBoardGames.exe.config
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\bin\Debug\P2PBoardGames.exe
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\bin\Debug\P2PBoardGames.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\obj\Debug\MainWindow.baml
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.g.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.csproj.GenerateResource.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.exe
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.csprojAssemblyReference.cache
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\bin\Debug\P2PBoardGames.exe.config
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\bin\Debug\P2PBoardGames.exe
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\bin\Debug\P2PBoardGames.pdb
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.csprojAssemblyReference.cache
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\obj\Debug\MainWindow.g.cs
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\obj\Debug\App.g.cs
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames_MarkupCompile.cache
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames_MarkupCompile.lref
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\obj\Debug\MainWindow.baml
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.g.resources
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.Properties.Resources.resources
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.csproj.GenerateResource.cache
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.exe
+C:\Users\user\Downloads\P2PBoardGames-master\P2PBoardGames\P2PBoardGames\obj\Debug\P2PBoardGames.pdb
