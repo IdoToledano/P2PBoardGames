@@ -1,0 +1,74 @@
+﻿<Page x:Class="P2PBoardGames.GameModeSelection"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:P2PBoardGames"
+      xmlns:controls="clr-namespace:P2PBoardGames.UserControls"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="GameModeSelection">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+
+        <TextBlock x:Name="Headline"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="2"
+                   FontSize="72" 
+                   FontFamily="Berlin Sans FB" 
+                   Foreground="Peru"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <Button Style="{StaticResource UserControlButtonStyle}" 
+                Click="Button_Click" 
+                Grid.Row="1" 
+                Grid.Column="1">
+            
+            <controls:ImageAndTextButton Body="Local Game" 
+                                         PathToImage="pack://application:,,,/P2PBoardGames;component/img/LocalGameIcon.png"/>
+        </Button>
+
+        <controls:ImageAndTextButton Body="Online Game" 
+                                  PathToImage="pack://application:,,,/P2PBoardGames;component/img/OnlineGameIcon.png"
+                                  Grid.Row="1"
+                                  Grid.Column="2"/>
+
+        <controls:ImageAndTextButton Body="Tournament" 
+                                      PathToImage="pack://application:,,,/P2PBoardGames;component/img/TournamentIcon.png"
+                                      Grid.Row="2"
+                                      Grid.Column="1"/>
+
+        <controls:ImageAndTextButton Body="How to Play?" 
+                                  PathToImage="pack://application:,,,/P2PBoardGames;component/img/QuestionMark.png"
+                                  Grid.Row="2"
+                                  Grid.Column="2"/>
+        
+        <Button Grid.Row ="3" 
+                Grid.Column="2" 
+                x:Name="BackButton"
+                Style="{StaticResource buttonStyle}" 
+                FontSize="32"
+                FontWeight="Bold"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Grid.ColumnSpan="2"
+                Margin="5, 0"
+                Click="Button_Click"
+                Content="Back"/>
+    </Grid>
+</Page>

@@ -1,0 +1,108 @@
+﻿<Page x:Class="P2PBoardGames.Games_Logic.Draughts"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:P2PBoardGames.GamesPages.Draughts"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="600"
+      Title="Draughts">
+
+    <Grid Background="#faf0e6" x:Name="Board">
+        <Grid.Resources>
+            <!-- Draughts piece style -->
+            <Style TargetType="{x:Type local:DraughtsPiece}" x:Key="DraughtsPieceStyle">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type local:DraughtsPiece}">
+                            <BulletDecorator Background="#8b4512" Cursor="Arrow" Name="BulletDec">
+                                <BulletDecorator.Bullet>
+                                    <Grid>
+                                        <Ellipse Width="60" 
+                                                 Height="60" 
+                                                 Fill="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Color}" 
+                                                 Margin="7.5"
+                                                 Opacity="1"
+                                                 Name="MyEllipse"/>
+                                        <Image Source="pack://application:,,,/P2PBoardGames;component/img/KingSymbol.png" 
+                                               Visibility="Collapsed"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center"
+                                               Panel.ZIndex="1"
+                                               Opacity="0.7"
+                                               Width="30"
+                                               Height="30"
+                                               Name="MyImage"/>
+                                    </Grid>
+                                </BulletDecorator.Bullet>
+                            </BulletDecorator>
+                            <!--If item is checked, trigger the visibility of the mark-->
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsChecked" Value="true">
+                                    <!--If item is checked, trigger the visibility of the mark and change the color of the selected bullet into a selected color for better highlighting-->
+                                    <Setter TargetName="BulletDec" Property="Background">
+                                        <Setter.Value>
+                                            <RadialGradientBrush>
+                                                <GradientStop Color="White" Offset="0.85"/>
+                                                <GradientStop Color="#8b4512" Offset="1"/>
+                                            </RadialGradientBrush>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                                <!--If Not Enabled, Reduce Opacity-->
+                                <Trigger Property="IsEnabled" Value="false">
+                                    <Setter TargetName="MyEllipse" Property="Opacity" Value="0.5"/>
+                                </Trigger>
+                                
+                                <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=GroupName}" Value="WhiteKing">
+                                    <Setter TargetName="MyImage" Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+
+                                <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=GroupName}" Value="BlackKing">
+                                    <Setter TargetName="MyImage" Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+
+            <!-- Empty squares style -->
+            <Style TargetType="{x:Type local:EmptySquare}" x:Key="EmptySquareStyle">
+                <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackColor}" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type local:EmptySquare}">
+                            <Ellipse Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=EllipseColor}"/>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Grid.Resources>
+        
+        <!-- Define checkerboard rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Define checkerboard columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Page>

@@ -1,0 +1,35 @@
+﻿<Page x:Class="P2PBoardGames.GamePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:P2PBoardGames"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="970"
+      Title="GamePage">
+
+    <DockPanel>
+        <Frame DockPanel.Dock="Left" 
+               Height="600" 
+               Width="600" 
+               BorderBrush="Black" 
+               BorderThickness="2"
+               HorizontalContentAlignment="Stretch"
+               VerticalContentAlignment="Stretch"
+               x:Name="GameFrame"/>
+        
+        <Frame HorizontalAlignment="Right"
+               VerticalAlignment="Top"
+               Width="370"
+               Height="80"
+               BorderBrush="Black"
+               BorderThickness="2"/>
+
+        <Frame HorizontalAlignment="Right"
+               VerticalAlignment="Bottom"
+               Width="370"
+               Height="80"
+               BorderBrush="Black"
+               BorderThickness="2"/>
+    </DockPanel>
+</Page>
